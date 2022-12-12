@@ -20,6 +20,10 @@ function NewPlantForm({ onAddPlant }) {
     })
       .then((r) => r.json())
       .then((newPlant) => onAddPlant(newPlant));
+
+      setName("")
+      setImage("")
+      setPrice("")
   }
 
   return (
